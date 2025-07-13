@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    <div class="container">
+         
+<header>
+    <h1>WeatherWise</h1>
+    <p>Stay weather-aware, anywhere</p>
+</header>
+<div class="search-section">
+    <input type="text" name="cityInput" placeholder="Enter the city name (eg., Mumbai, Delhi, Bhopal)" class="city-input">
+</div>
+<button  id="searchbtn" class="search-btn">Get Weather</button>
+
+<p id="loadingText" class="hidden">Loading weather data...</p>
+<div>
+
+    <div id="error" class="error hidden">
+        <p id="errorMessage"></p>
+    </div>
+
+    <div id="weatherDisplay" class="weather-display hidden">
+        <h2 id="cityName"></h2>
+        <div class="weather-info">
+            <div class="temperature">
+                <span id="temperature"></span>
+                <span class="unit">°C</span>
+            </div>
+            <div class="description">
+                <p id="weatherDescription"></p>
+            </div>
+        </div>
+
+        <div class="weather-details">
+  <div class="detail-item">
+    <span class="label">Feels like :</span>
+    <span id="feelsLike"></span>°C 
+  </div>
+  <div class="detail-item">
+    <span class="label">Humidity :</span>
+    <span id="humidity"></span>%
+  </div>
+  <div class="detail-item">
+    <span class="label">AQI :</span>
+    <span id="aqiValue">--</span>
+  </div>
+  <div class="detail-item">
+    <span class="label">Wind Speed :</span>
+    <span id="windSpeed"></span> m/s
+  </div>
+</div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html> 
